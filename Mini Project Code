@@ -1,0 +1,38 @@
+#include <fstream>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+  
+// Bookshop Class
+class bookshope {
+public:
+    void control_panel();
+    void add_book();
+    void show_book();
+    void check_book();
+    void update_book();
+    void del_book();
+};
+  
+// Function to display the menus
+void bookshope::control_panel()
+{
+    system("cls");
+    cout << "\n\n\t\t\t\tCONTROL  PANEL";
+    cout << "\n\n1. ADD BOOK";
+    cout << "\n2. DISPLAY BOOKS";
+    cout << "\n3. CHECK PARTICULAR BOOK";
+    cout << "\n4. UPDATE BOOK";
+    cout << "\n5. DELETE BOOK";
+    cout << "\n6. EXIT";
+}
+  
+// Function to add book
+void bookshope::add_book()
+{
+    system("cls");
+    fstream file;
+    int no_copy;
+    string b_name, a_name, b_id;
+    cout <…
